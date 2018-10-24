@@ -1,0 +1,20 @@
+{
+  "name": "simple-rating-star",
+  "version": "0.0.5",
+  "description": "A simple library to display rating star for angular",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "keywords": [
+    "angular-rating",
+    "rating-bar",
+    "simple angular rating",
+    "angualr rating 4"
+  ],
+  "author": {
+    "name": "Santosh Sagar",
+    "email": "msg2santoshsagar@gmail.com",
+    "url": ""
+  }
+}

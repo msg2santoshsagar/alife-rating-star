@@ -1,0 +1,15 @@
+.button {
+    cursor: pointer;
+}
+
+.read-only .button {
+    cursor: default;
+}
+
+.star-on .material-icons {
+    color: #EE9A00;
+}
+
+.star-off .material-icons {
+    color: #ddd;
+}
