@@ -77,7 +77,7 @@ export class SimpleRatingStarComponent implements OnInit, OnChanges, DoCheck {
     for (let i = 1; i <= this.ratingOption.maxRating; i++) {
       let rating = {
         index: i,
-        status: 'star-off'
+        status: 'alife-star-off'
       }
       tmpRatings.push(rating);
     }
@@ -130,9 +130,9 @@ export class SimpleRatingStarComponent implements OnInit, OnChanges, DoCheck {
     for (let index = 0; index < this.ratings.length; index++) {
       let item = this.ratings[index];
       if (index <= (rating - 1)) {
-        item.status = 'star-on';
+        item.status = 'alife-star-on';
       } else {
-        item.status = 'star-off';
+        item.status = 'alife-star-off';
       }
     }
   }
@@ -154,7 +154,7 @@ export class SimpleRatingStarComponent implements OnInit, OnChanges, DoCheck {
    * @param rating
    */
   setRating(rating) {
-    if (this.ratingOption.readOnly) {
+    if (this.ratingOption.readOnly || this.rating == rating) {
       return;
     }
     let old = this.rating;

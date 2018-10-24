@@ -1,33 +1,85 @@
-# RatingStar
+# Alife Simple Rating Star
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
+Angular 4 simple rating star that works with `Google Material Icons`
 
-## Development server
+## Install simple-rating-star from NPM :
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm install simple-rating-star --save`
 
-## Code scaffolding
+## Add Dependecy to your project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Add Google Material Icons to index .html
 
-## Build
+```html
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+-  Import `SimpleRatingStarModule` to your project and include module in imports section
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```javascript
+import { SimpleRatingStarModule } from 'simple-rating-star';
 
-## Running unit tests
+@NgModule({
+  declarations: [
+  ],
+  imports: [
+    SimpleRatingStarModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Syntax
+```html
+<alife-simple-rating-star [options]="options" (onRatingChanged)="OnRatingChanged($event)" [rating]="3" ></alife-simple-rating-star>
+```
 
-## Running end-to-end tests
+## Options
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+options Definition : 
 
-## Further help
+```javascript
+options = {
+       maxRating?: number = 5;
+       readOnly?: boolean = false;
+       resetAllowed?: boolean = true;
+ }
+```
+ - maxRating      : The number of star
+ - readOnly       : To decide if user can change the value or not
+ - resetAllowed   : To allow user to reset the rating
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Events
 
+ - onRatingChanged : Will get called when user will change the rating. It will contain previous rating and new rating.
 
-## Building Library
-Run `ng build simple-rating-star` to build the library
-Run `cd dist/simple-rating-star`  to go the lib directory
-Run `npm publish`                 to publish the package
+## Passing the initial rating
+
+    There is may ways to set rating. You can set as given below :
+    
+    [rating]="3"            : Constant value
+    [rating]="ratingData"   : To set the value from component
+    rating="3"              : Constant
+    [(rating)]="ratingData" : Two way binding
+
+## Examples
+
+- Displaying rating using loop with two way binding
+
+```html
+<alife-simple-rating-star [options]="options" (onRatingChanged)="OnRatingChanged($event)" [(rating)]="modelRating[index]"
+    *ngFor="let r of modelRating;let index = index"></alife-simple-rating-star>
+```
+-  Displaying rating using value
+
+```html
+<alife-simple-rating-star [options]="options" (onRatingChanged)="OnRatingChanged($event)" [rating]="modelRating" ></alife-simple-rating-star>
+```
+
+## Author
+
+Santosh Sagar
+
+## License
+
+This module is released under the permissive [MIT license](https://github.com/msg2santoshsagar/alife-simple-rating-star/blob/master/LICENSE)

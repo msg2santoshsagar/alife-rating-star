@@ -1,10 +1,10 @@
-<div class="alife-simple-rating-container" [ngClass]="{'read-only': ratingOption.readOnly}">
+<div class="alife-simple-rating-container" [ngClass]="{'alife-read-only': ratingOption.readOnly}">
 
-  <a class="button" (click)="setRating(0)" *ngIf="!ratingOption.readOnly && ratingOption.resetAllowed">
+  <a class="alife-button" (click)="setRating(0)" *ngIf="!ratingOption.readOnly && ratingOption.resetAllowed">
     <i class="material-icons">remove_circle_outline</i>
   </a>
 
-  <a *ngFor="let r of ratings" class="button" [ngClass]="r.status" (mouseenter)="setMouseOverRating(r.index)"
-    (mouseleave)="setMouseOverRating(rating)" (click)="setRating(r.index)"><i class="material-icons">star</i></a>
+  <a *ngFor="let r of ratings" class="alife-button" [ngClass]="r.status" (mouseenter)="setMouseOverRating(r.index)"
+    (mouseleave)="setMouseOverRating(rating)" (click)="setRating(r.index)"><i class="material-icons alife-material-icons">star</i></a>
 
 </div>

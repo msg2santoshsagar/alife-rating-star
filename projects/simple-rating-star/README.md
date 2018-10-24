@@ -79,3 +79,7 @@ options = {
 ## Author
 
 Santosh Sagar
+
+## License
+
+This module is released under the permissive [MIT license](https://github.com/msg2santoshsagar/alife-simple-rating-star/blob/master/LICENSE)
