@@ -1,0 +1,12 @@
+<div>
+  <h1>Rating Example</h1>
+
+  <alife-rating-star [(options)]="options" (onRatingChanged)="OnRatingChanged($event)" [(rating)]="modelRating[index]"
+    *ngFor="let r of modelRating;let index = index"></alife-rating-star>
+
+
+
+  <alife-rating-star [(options)]="options" (onRatingChanged)="OnRatingChanged($event)" [rating]="3" ></alife-rating-star>
+
+  <alife-rating-star rating="3"></alife-rating-star>
+</div>

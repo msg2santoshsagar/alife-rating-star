@@ -1,0 +1,15 @@
+.alife-button {
+  cursor: pointer;
+}
+
+.alife-read-only .alife-button {
+  cursor: default;
+}
+
+.alife-star-on .alife-material-icons {
+  color: #EE9A00;
+}
+
+.alife-star-off .alife-material-icons {
+  color: #ddd;
+}

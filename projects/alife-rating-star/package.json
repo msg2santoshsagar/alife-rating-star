@@ -1,0 +1,28 @@
+{
+  "name": "alife-rating-star",
+  "version": "0.0.1",
+  "description": "Angular simple yet powerful library to show rating star which uses Google Material Icons",
+  "homepage": "https://github.com/msg2santoshsagar/alife-rating-star#readme",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^7.0.0",
+    "@angular/core": "^7.0.0"
+  },
+  "keywords": [
+    "alife-rating-star",
+    "rating star",
+    "simple angular rating",
+    "alife",
+    "alife rating bar",
+    "angular rating"
+  ],
+  "author": {
+    "name": "Santosh Sagar",
+    "email": "msg2santoshsagar@gmail.com",
+    "url": "https://github.com/msg2santoshsagar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msg2santoshsagar/alife-rating-star"
+  }
+}
