@@ -36,7 +36,7 @@ import { AlifeRatingStarModule } from 'alife-rating-star';
 
 ## Options
 
-options Definition : 
+options Definition :
 
 ```javascript
 options = {
@@ -56,7 +56,7 @@ options = {
 ## Passing the initial rating
 
     There is may ways to set rating. You can set as given below :
-    
+
     [rating]="3"            : Constant value
     [rating]="ratingData"   : To set the value from component
     rating="3"              : Constant
@@ -82,4 +82,4 @@ Santosh Sagar
 
 ## License
 
-This module is released under the permissive [MIT license](https://github.com/msg2santoshsagar/alife-rating-star/blob/master/LICENSE)
+This module is released under the permissive [MIT license](https://github.com/msg2santoshsagar/alife-rating-star/blob/master/LICENCE)
